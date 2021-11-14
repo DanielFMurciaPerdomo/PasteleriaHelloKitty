@@ -1,0 +1,22 @@
+/* Todo lo relacionado con el pie de pagina */
+/* Tamaño mediano de letra */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+footer{
+    font-size: 14px;
+    margin-top: 0;
+    padding: 2rem;
+    background-color: #F0A8DF;
+    font-family: 'Dosis','sans-serif';
+}
+footer section{
+    float: right;
+    text-decoration: none;
+}
+footer a{
+    color: #3C2416;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #391b4b;
+}

@@ -1,0 +1,32 @@
+/* Todo lo relacionado con la Navegacion */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+.menu{
+    list-style: none;
+    padding: 0;
+    background:#f0a8df;
+    margin: 0;
+    border-top-color: #b37fd1;
+    border-style: solid;
+    border-left-color: #b37fd1;
+    border-right-color: #b37fd1;
+    border-bottom-color: #b37fd1;
+    text-align: center;
+    font-family: 'Dosis','sans-serif';
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    color: #391b4b;
+    padding: 20px;
+    display: block;
+    cursor: pointer;  
+}
+.menu li a:hover{
+    transition: color 0.1s ease;
+    background-color: #F3B9E6;
+    color: #b758ee;    
+}

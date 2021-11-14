@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+.contenedor-home{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: aqua;
+    font-family: 'Dosis', 'sans-serif';
+}
+.contenedor-home .info{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.contenedor-home .titulo{
+    text-align: center;
+}
