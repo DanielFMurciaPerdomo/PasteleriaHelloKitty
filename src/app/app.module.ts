@@ -21,6 +21,7 @@ const router:Routes=[
   {path:'persona',component:FormularioPersonaComponent},
   {path:'insertarEmpleados',component:IncertarEmpleadosComponent},
   {path:'verEmpleados',component:VerEmpleadosComponent},
+  {path:'serviciosAd',component:ServiciosAdicionalesComponent},
   
 ]
 @NgModule({
