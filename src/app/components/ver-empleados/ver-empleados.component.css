@@ -40,10 +40,20 @@
 }
 .contenedor-empleados .tablaPedidos td,th{
     border: solid 1px #391b4b;
-}
-.contenedor-empleados .tablaPedidos td{
-    background-color: #ff7ec1;
     text-align: center;
+}
+.contenedor-empleados .tablaPedidos th{
+    background-color: #ff7ec1;
     padding: 1rem;
-
+}
+.contenedor-empleados .tablaPedidos td .borrar{
+    background-color: #ff7e9f;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Dosis','sans-serif';
+    padding: .5em;
+    margin: .2em;
+}
+.contenedor-empleados .tablaPedidos td .espacio{
+    margin: 2em;
 }

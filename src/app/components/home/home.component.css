@@ -51,10 +51,10 @@ hr{
 }
 .contenedor-home .tablaPedidos td,th{
     border: solid 1px #391b4b;
-}
-.contenedor-home .tablaPedidos td{
-    background-color: #ff7ec1;
     text-align: center;
+}
+.contenedor-home .tablaPedidos th{
+    background-color: #ff7ec1;
     padding: 1rem;
 
 }

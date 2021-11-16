@@ -5,26 +5,26 @@
     <div class="pedido-wrapper animated bounceInUp">
         <div class="pedido-form">
             <h3>Incerte el pastelero </h3>
-            <form action="">
+            <form (ngSubmit)="create()">
                 <p>
                     <label for="nombreCompleto" class="espacio">Nombre completo</label>
-                    <input type="text" name="nombreCompleto" id="nombreCompleto">
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" [(ngModel)]="pastelero.nombre">
                 </p>
                 <p>
                     <label for="salario" class="espacio">Salario $</label>
-                    <input type="number" name="salario" id="salario">
+                    <input type="number" name="salario" id="salario" [(ngModel)]="pastelero.salario">
                 </p>
                 <p>
                     <label for="pasaporte" class="espacio">Pasaporte</label>
-                    <input type="number" name="pasaporte" id="pasaporte">
+                    <input type="text" name="pasaporte" id="pasaporte" [(ngModel)]="pastelero.pasaporte">
                 </p>
                 <p>
                     <label for="paisOrigen" class="espacio">Pais de Origen</label>
-                    <input type="text" name="paisOrigen" id="paisOrigen">
+                    <input type="text" name="paisOrigen" id="paisOrigen" [(ngModel)]="pastelero.paisOgn">
                 </p>
                 <p>
                     <label for="experiencia" class="espacio">Años de experiencia</label>
-                    <input type="number" name="experiencia" id="experiencia">
+                    <input type="number" name="experiencia" id="experiencia" [(ngModel)]="pastelero.experiencia">
                 </p>
                 <p class="block">
                     <button>
