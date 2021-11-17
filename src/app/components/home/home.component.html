@@ -1,44 +1,77 @@
-<div class="contenedor-home">
-    <div class="info">
-        <p> 
-            La pasteleria que saciara tus apetitos.<br/>
-            Aprovecha para ver los pedidos de nuestros clientes 
-            para darte una idea a elegir recuerda siempre, <br/>
-            tu satisfacción es nuestra obligación.
-        </p>
+<div class="contenido">
+
+    <h1 class="logo">Pedidos <span>Personas</span></h1>
+    
+    <div class="contenedor-pedidos">
+        <div class="contenedorTabla">
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Codigo</strong></th>
+                        <th><strong>Nombre</strong></th>
+                        <th><strong>Tipo</strong></th>
+                        <th><strong>Peso</strong></th>
+                        <th><strong>fechaSolicitud</strong></th>
+                        <th><strong>fechaEntrega</strong></th>
+                        <th><strong>Descripción</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pastel of pasteles">
+                        <td>{{pastel.codigoP}}</td>
+                        <td>{{pastel.nombre}}</td>
+                        <td>{{pastel.tipo}}</td>
+                        <td>{{pastel.peso}}kg</td>
+                        <td>{{pastel.fechaSolicitud}}</td>
+                        <td>{{pastel.fechaEntrega}}</td>
+                        <td>{{pastel.descripcion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Solicitante</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let persona of personas">
+                        <td>el solicitante de cedula {{persona.cedula}} se llama {{persona.nombreCompleto}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="titulo">
-        <h1>Pedidos</h1>
+    <h1 class="logo">Pedidos <span>Empresas</span></h1>
+    
+    <div class="contenedor-pedidos">
+        <div class="contenedorTabla">
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Codigo del pastel</strong></th>
+                        <th><strong>Nombre</strong></th>
+                        <th><strong>Tipo</strong></th>
+                        <th><strong>Peso</strong></th>
+                        <th><strong>fechaSolicitud</strong></th>
+                        <th><strong>fechaEntrega</strong></th>
+                        <th><strong>Descripción</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pastel of pasteles">
+                        <td>{{pastel.codigoP}}</td>
+                        <td>{{pastel.nombre}}</td>
+                        <td>{{pastel.tipo}}</td>
+                        <td>{{pastel.peso}}kg</td>
+                        <td>{{pastel.fechaSolicitud}}</td>
+                        <td>{{pastel.fechaEntrega}}</td>
+                        <td>{{pastel.descripcion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="contenedorTabla">
-        <table class="tablaPedidos">
-            <thead>
-                <tr>
-                    <th><strong>Codigo</strong></th>
-                    <th><strong>Nombre</strong></th>
-                    <th><strong>Tipo</strong></th>
-                    <th><strong>Peso</strong></th>
-                    <th><strong>Fecha de solicitud</strong></th>
-                    <th><strong>Fecha de entrega</strong></th>
-                    <th><strong>Descripción</strong></th>
-                    <th><strong>Solicitante</strong></th>
-                    <th><strong>Empleado que lo recibió</strong></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>codigoPastel</td>
-                    <td>nombrePastel</td>
-                    <td>tipo</td>
-                    <td>peso</td>
-                    <td>fechaSolicitud</td>
-                    <td>fechaEntrega</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, provident?</td>
-                    <td>solicitante</td>
-                    <td>empleado</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <hr>
 </div>

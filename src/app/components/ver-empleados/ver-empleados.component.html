@@ -26,7 +26,7 @@
                         <td>{{pastelero.experiencia}}</td>
                         <td><button name="eliminar" (click)="delete(pastelero)" class="borrar">Eliminar</button>
                             <span class="espacio"></span>
-                            <button name="eliminar" (click)="delete(pastelero)">Eliminar</button>
+                            <button name="eliminar" (click)="delete(pastelero)">Actualizar</button>
                         </td>
                     </tr>
                 </tbody>
@@ -43,13 +43,18 @@
                         <th><strong>Codigo</strong></th>
                         <th><strong>Nombre</strong></th>
                         <th><strong>Salario</strong></th>
+                        <th><strong>Modificaciones a los empleados</strong></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>codigoPastel</td>
-                        <td>nombrePastel</td>
-                        <td>tipo</td>
+                    <tr *ngFor="let decorador of decoradores">
+                        <td>{{decorador.codigoDec}}</td>
+                        <td>{{decorador.nombre}}</td>
+                        <td>{{decorador.salario}}</td>
+                        <td><button name="eliminar" (click)="deleteDec(decorador)" class="borrar">Eliminar</button>
+                            <span class="espacio"></span>
+                            <button name="eliminar" (click)="deleteDec(decorador)">Actualizar</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

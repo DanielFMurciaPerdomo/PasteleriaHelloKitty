@@ -22,23 +22,28 @@
 .pedido-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
-
+.pedido-wrapper .pedido-form {
+    background: #ffc2e1;
+    padding: .5em;
+}
 .pedido-wrapper {
     padding: 2em;
 }
 
-.pedido-form {
-    background: #ffc2e1;
+
+.pedido-form h3{
+    color: #391b4b;
+    font-family: 'Dosis','sans-serif';
+}
+.subtitulo{
+    margin: 0;
 }
 
 .pedido-form form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.pedido-form h3{
-    color: #391b4b;
-    font-family: 'Dosis','sans-serif';
-}
+
 .pedido-form form label {
     display: block;
     font-family: 'Dosis','sans-serif';

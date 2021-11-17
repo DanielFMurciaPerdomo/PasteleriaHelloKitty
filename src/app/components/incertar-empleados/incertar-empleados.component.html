@@ -40,14 +40,14 @@
         </div>
         <div class="pedido-form-decoradores">
             <h3>Incerte el decorador</h3>
-            <form action="">
+            <form (ngSubmit)="createDec()">
                 <p>
                     <label for="nombreCompleto" class="espacio">Nombre completo</label>
-                    <input type="text" name="nombreCompleto" id="nombreCompleto">
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" [(ngModel)]="decorador.nombre">
                 </p>
                 <p>
                     <label for="salario" class="espacio">Salario $</label>
-                    <input type="number" name="salario" id="salario">
+                    <input type="number" name="salario" id="salario" [(ngModel)]="decorador.salario">
                 </p>
                 <p class="block">
                     <button>
