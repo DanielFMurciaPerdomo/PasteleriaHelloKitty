@@ -5,19 +5,19 @@
     <div class="pedido-wrapper animated bounceInUp">
         <div class="pedido-form">
             <h3>Incerte datos de la persona </h3>
-             <form > <!-- (ngSubmit)="createPer()" -->
-                <!-- <p>
+             <form  (ngSubmit)="createEmp()">
+                <p>
                     <label for="nit" class="espacio">NIT</label>
-                    <input type="number" name="nit" id="nit" [(ngModel)]="persona.cedula">
+                    <input type="number" name="nit" id="nit" [(ngModel)]="empresa.nit">
                 </p>
                 <p>
                     <label for="nombreEmpresa" class="espacio">Nombre Empresa</label>
-                    <input type="text" name="nombreEmpresa" id="nombreEmpresa" [(ngModel)]="persona.nombre">
+                    <input type="text" name="nombreEmpresa" id="nombreEmpresa" [(ngModel)]="empresa.nombre">
                 </p>
                 <p>
                     <label for="direccionEmpresa" class="espacio">Dirección</label>
-                    <input type="text" name="direccionEmpresa" id="direccionEmpresa" [(ngModel)]="persona.direccion">
-                </p> -->
+                    <input type="text" name="direccionEmpresa" id="direccionEmpresa" [(ngModel)]="empresa.direccion">
+                </p>
                 <p>
                     <button>
                         Guardar Empresa
@@ -27,31 +27,31 @@
         </div>
         <div class="pedido-form">
             <h3 class="subtitulo">Incerte datos del pastel </h3>
-            <form > <!--(ngSubmit)="createP()"-->
-                <!-- <p>
+            <form (ngSubmit)="createPa()"> 
+                <p>
                     <label for="nombrePastel" class="espacio">Nombre Pastel</label>
-                    <input type="text" name="nombrePastel" id="nombrePastel" [(ngModel)]="pastel.nombre">
+                    <input type="text" name="nombrePastel" id="nombrePastel" [(ngModel)]="pastelemp.nombre">
                 </p>
                 <p>
                     <label for="tipo" class="espacio">Tipo</label>
-                    <input type="text" name="tipo" id="tipo" [(ngModel)]="pastel.tipo">
+                    <input type="text" name="tipo" id="tipo" [(ngModel)]="pastelemp.tipo">
                 </p>
                 <p>
                     <label for="peso" class="espacio">Peso</label>
-                    <input type="number" name="peso" id="peso" [(ngModel)]="pastel.peso">
+                    <input type="number" name="peso" id="peso" [(ngModel)]="pastelemp.peso">
                 </p>
                 <p>
                     <label for="fechaSolicitud" class="espacio">Fecha de la Solicitud</label>
-                    <input type="date" name="fechaSolicitud" id="fechaSolicitud" [(ngModel)]="pastel.fechaSolicitud">
+                    <input type="date" name="fechaSolicitud" id="fechaSolicitud" [(ngModel)]="pastelemp.fechaSolicitud">
                 </p>
                 <p>
                     <label for="fechaEntrega" class="espacio">Fecha de la Entrega</label>
-                    <input type="date" name="fechaEntrega" id="fechaEntrega" [(ngModel)]="pastel.fechaEntrega">
+                    <input type="date" name="fechaEntrega" id="fechaEntrega" [(ngModel)]="pastelemp.fechaEntrega">
                 </p>
                 <p class="block">
                     <label for="descripcion">Descripcion</label> 
-                     <textarea name="descripccion" rows="3" [(ngModel)]="pastel.descripcion"></textarea>
-                 </p> -->
+                     <textarea name="descripccion" rows="3" [(ngModel)]="pastelemp.descripcion"></textarea>
+                 </p>
                 <p class="block">
                     <button>
                         Realizar Pedido

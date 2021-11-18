@@ -13,6 +13,10 @@ import { FormularioPersonaComponent } from './components/formulario-persona/form
 import { IncertarEmpleadosComponent } from './components/incertar-empleados/incertar-empleados.component';
 import { ServiciosAdicionalesComponent } from './components/servicios-adicionales/servicios-adicionales.component';
 import { VerEmpleadosComponent } from './components/ver-empleados/ver-empleados.component';
+import { FormularioCoccionComponent } from './components/formulario-coccion/formulario-coccion.component';
+import { VerCoccionComponent } from './components/ver-coccion/ver-coccion.component';
+import { FormularioDecoracionesComponent } from './components/formulario-decoraciones/formulario-decoraciones.component';
+import { VerDecoracionesComponent } from './components/ver-decoraciones/ver-decoraciones.component';
 
 const router:Routes=[
   {path:'',component:HomeComponent},
@@ -35,7 +39,11 @@ const router:Routes=[
     FormularioPersonaComponent,
     IncertarEmpleadosComponent,
     ServiciosAdicionalesComponent,
-    VerEmpleadosComponent
+    VerEmpleadosComponent,
+    FormularioCoccionComponent,
+    VerCoccionComponent,
+    FormularioDecoracionesComponent,
+    VerDecoracionesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Empresa } from 'src/app/models/Empresa';
-import { Pastel } from 'src/app/models/Pastel';
+import { PastelEmp } from 'src/app/models/PastelEmp';
 import { EmpresaService } from 'src/app/services/empresa.service';
-import { PastelService } from 'src/app/services/pastel.service';
+import { PastelempService } from 'src/app/services/pastelemp.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -13,20 +13,20 @@ import Swal from 'sweetalert2';
 export class FormularioEmpresaComponent implements OnInit {
   
   empresa:Empresa;
-  pastel:Pastel;
-  constructor(private empresaService:EmpresaService, private pastelService:PastelService) {
+  pastelemp:PastelEmp;
+  constructor(private empresaService:EmpresaService, private pastelempService:PastelempService) {
     this.empresa = new Empresa(0,'','');
-    this.pastel = new Pastel(0,'','',0,'','','');
+    this.pastelemp = new PastelEmp(0,'','',0,'','','');
    }
 
   ngOnInit(): void {
   }
-  createP():void{
-    this.pastelService.createP(this.pastel).subscribe(
+  createPa():void{
+    this.pastelempService.createPa(this.pastelemp).subscribe(
       response=>{Swal.fire('Orden agregaga con exito')}
     );
   }
-  createPer():void{
+  createEmp():void{
     this.empresaService.createEmp(this.empresa).subscribe(
       response=>{Swal.fire('Empresa agregada')}
     );
