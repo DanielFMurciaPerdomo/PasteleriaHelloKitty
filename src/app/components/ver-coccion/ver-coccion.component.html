@@ -17,7 +17,7 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let coccion of cocciones"> 
-                        <td>{{coccion.codigoHorEmp}}</td>
+                        <td>{{coccion.codigoHor}}</td>
                         <td>{{coccion.marca}}</td>
                         <td>{{coccion.valorEstimado}}</td>
                         <td>{{coccion.tempCoccion}}kg</td>
@@ -31,12 +31,12 @@
             <table class="tablaPedidos">
                 <thead>
                     <tr>
-                        <th><strong>Solicitante</strong></th>
+                        <th><strong>Pedido</strong></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr > <!--*ngFor="let persona of personas"-->
-                        <!-- <td>el solicitante de cedula {{persona.cedula}} se llama {{persona.nombreCompleto}}</td> -->
+                    <tr *ngFor="let pastel of pasteles"> 
+                        <td>{{pastel.nombre}} registrado con el codigo: {{pastel.codigoP}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -73,12 +73,12 @@
             <table class="tablaPedidos">
                 <thead>
                     <tr>
-                        <th><strong>Solicitante</strong></th>
+                        <th><strong>Pedido</strong></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr > <!--*ngFor="let empresa of empresas"-->
-                        <!-- <td>el solicitante de cedula {{empresa.nit}} se llama {{empresa.nombre}}</td> -->
+                    <tr *ngFor="let pastelemp of pastelesemp"> 
+                        <td>{{pastelemp.nombre}} registrado con el codigo: {{pastelemp.codigoPa}}</td>
                     </tr>
                 </tbody>
             </table>

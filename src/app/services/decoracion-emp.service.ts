@@ -8,7 +8,7 @@ import { DecoracionEmp } from '../models/DecoracionEmp';
   providedIn: 'root'
 })
 export class DecoracionEmpService {
-  private urlEndPoint:string='http://localhost:8082/pasteleria/decoraciones/';
+  private urlEndPoint:string='http://localhost:8082/pasteleria/decoracionesemp/';
   private header=new HttpHeaders({'Content-type':'application/json'});
   constructor(private http:HttpClient) { }
   getDecoracionesEmp():Observable<DecoracionEmp[]>{

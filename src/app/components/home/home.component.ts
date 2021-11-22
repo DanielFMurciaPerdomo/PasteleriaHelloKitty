@@ -15,14 +15,14 @@ import { PersonaService } from 'src/app/services/persona.service';
 })
 export class HomeComponent implements OnInit {
   personas:Persona[]
-  pasteles:Pastel[]
   empresas:Empresa[]
+  pasteles:Pastel[]
   pastelesemp:PastelEmp[]
-  constructor(private personaService:PersonaService, private pastelService:PastelService, 
-              private empresaService:EmpresaService, private pastelempService:PastelempService) {
+  constructor(private personaService:PersonaService, private empresaService:EmpresaService,
+    private pastelService:PastelService, private pastelempService:PastelempService) {
     this.personas=[]
-    this.pasteles=[]
     this.empresas=[]
+    this.pasteles=[]
     this.pastelesemp=[]
    }
 
@@ -30,11 +30,11 @@ export class HomeComponent implements OnInit {
     this.personaService.getPersonas().subscribe(
       personas=>this.personas=personas
     )
-    this.pastelService.getPasteles().subscribe(
-      pasteles=>this.pasteles=pasteles
-    )
     this.empresaService.getEmpresa().subscribe(
       empresas=>this.empresas=empresas
+    )
+    this.pastelService.getPasteles().subscribe(
+      pasteles=>this.pasteles=pasteles
     )
     this.pastelempService.getPastelesEmp().subscribe(
       pastelesemp=>this.pastelesemp=pastelesemp

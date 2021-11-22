@@ -8,39 +8,19 @@
                 <thead>
                     <tr>
                         <th><strong>Codigo</strong></th>
-                        <th><strong>Nombre</strong></th>
-                        <th><strong>Tipo</strong></th>
-                        <th><strong>Peso</strong></th>
-                        <th><strong>fechaSolicitud</strong></th>
-                        <th><strong>fechaEntrega</strong></th>
-                        <th><strong>Descripción</strong></th>
-                        <th><strong>Empleado</strong></th>
+                        <th><strong>Fecha y Hora de Inicio</strong></th>
+                        <th><strong>Fecha y Hora de Fin</strong></th>
+                        <th><strong>Peso Final</strong></th>
+                        <th><strong>Decorador</strong></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr > <!--*ngFor="let pastel of pasteles"-->
-                        <!-- <td>{{pastel.codigoP}}</td>
-                        <td>{{pastel.nombre}}</td>
-                        <td>{{pastel.tipo}}</td>
-                        <td>{{pastel.peso}}kg</td>
-                        <td>{{pastel.fechaSolicitud}}</td>
-                        <td>{{pastel.fechaEntrega}}</td>
-                        <td>{{pastel.descripcion}}</td>
-                        <td>{{pastel.empleado}}</td> -->
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div>
-            <table class="tablaPedidos">
-                <thead>
-                    <tr>
-                        <th><strong>Solicitante</strong></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr > <!--*ngFor="let persona of personas"-->
-                        <!-- <td>el solicitante de cedula {{persona.cedula}} se llama {{persona.nombreCompleto}}</td> -->
+                    <tr *ngFor="let decoracion of decoraciones"> 
+                        <td>{{decoracion.codigoDecor}}</td>
+                        <td>{{decoracion.fechaHoraInicio}}</td>
+                        <td>{{decoracion.fechaHoraFin}}</td>
+                        <td>{{decoracion.pesoFinal}}kg</td>
+                        <td>{{decoracion.decorador}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -54,39 +34,19 @@
                 <thead>
                     <tr>
                         <th><strong>Codigo</strong></th>
-                        <th><strong>Nombre</strong></th>
-                        <th><strong>Tipo</strong></th>
-                        <th><strong>Peso</strong></th>
-                        <th><strong>fechaSolicitud</strong></th>
-                        <th><strong>fechaEntrega</strong></th>
-                        <th><strong>Descripción</strong></th>
-                        <th><strong>Empleado</strong></th>
+                        <th><strong>Fecha y Hora de Inicio</strong></th>
+                        <th><strong>Fecha y Hora de Fin</strong></th>
+                        <th><strong>Peso Final</strong></th>
+                        <th><strong>Decorador</strong></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr > <!--*ngFor="let pastelemp of pastelesemp"-->
-                        <!-- <td>{{pastelemp.codigoPa}}</td>
-                        <td>{{pastelemp.nombre}}</td>
-                        <td>{{pastelemp.tipo}}</td>
-                        <td>{{pastelemp.peso}}kg</td>
-                        <td>{{pastelemp.fechaSolicitud}}</td>
-                        <td>{{pastelemp.fechaEntrega}}</td>
-                        <td>{{pastelemp.descripcion}}</td>
-                        <td>{{pastelemp.empleado}}</td> -->
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div>
-            <table class="tablaPedidos">
-                <thead>
-                    <tr>
-                        <th><strong>Solicitante</strong></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr > <!--*ngFor="let empresa of empresas"-->
-                        <!-- <td>el solicitante de cedula {{empresa.nit}} se llama {{empresa.nombre}}</td> -->
+                    <tr *ngFor="let decoracionemp of decoracionesEmp"> 
+                        <td>{{decoracionemp.codigoDecore}}</td>
+                        <td>{{decoracionemp.fechaHoraInicio}}</td>
+                        <td>{{decoracionemp.fechaHoraFin}}</td>
+                        <td>{{decoracionemp.pesoFinal}}kg</td>
+                        <td>{{decoracionemp.decorador}}</td>
                     </tr>
                 </tbody>
             </table>

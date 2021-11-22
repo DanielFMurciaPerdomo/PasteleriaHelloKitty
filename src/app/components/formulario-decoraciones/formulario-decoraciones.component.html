@@ -5,70 +5,52 @@
     <div class="pedido-wrapper animated bounceInUp">
         <div class="pedido-form">
             <h3>Incerte los datos de decoracion para el pedido de personas </h3>
-            <form > <!--(ngSubmit)="createCoc()"-->
-                <!-- <p>
-                    <label for="temperatura" class="espacio">Temperatura de coccion</label>
-                    <input type="number" name="temperatura" id="temperatura" [(ngModel)]="pastelero.pasaporte">
-                </p>
+            <form (ngSubmit)="createDecor()"> 
                 <p>
                     <label for="fechaHoraInicio" class="espacio">Fecha y Hora de inicio</label>
-                    <input type="datetime" name="fechaHoraInicio" id="fechaHoraInicio" [(ngModel)]="pastelero.paisOgn">
+                    <input type="datetime" name="fechaHoraInicio" id="fechaHoraInicio" [(ngModel)]="decoracion.fechaHoraInicio">
                 </p>
                 <p>
-                    <label for="fechaHoraFinal" class="espacio">Fecha y Hora de Final</label>
-                    <input type="datetime" name="fechaHoraFinal" id="fechaHoraFinal" [(ngModel)]="pastelero.experiencia">
+                    <label for="fechaHoraFin" class="espacio">Fecha y Hora de Final</label>
+                    <input type="datetime" name="fechaHoraFin" id="fechaHoraFin" [(ngModel)]="decoracion.fechaHoraFin">
                 </p>
                 <p>
-                    <label for="marca" class="espacio">Marca Horno</label>
-                    <input type="text" name="marca" id="marca" [(ngModel)]="pastelero.nombre">
+                    <label for="peso" class="espacio">Peso del pastel</label>
+                    <input type="number" name="peso" id="peso" [(ngModel)]="decoracion.pesoFinal">
                 </p>
                 <p>
-                    <label for="valor" class="espacio">Valor estimado del pastel $</label>
-                    <input type="number" name="valor" id="valor" [(ngModel)]="pastelero.salario">
-                </p> -->
+                    <label for="decorador" class="espacio">Decorador encargado</label>
+                    <input type="text" name="decorador" id="decorador" [(ngModel)]="decoracion.decorador">
+                </p>
                 <p class="block">
                     <button>
                         Incertar
-                    </button>
-                </p>
-                <p class="block">
-                    <button>
-                        Actualizar
                     </button>
                 </p>
             </form>
         </div>
         <div class="pedido-form">
             <h3>Incerte los datos de decoracion para el pedido de empresas</h3>
-            <form > <!--(ngSubmit)="createCocEmp()"-->
-                <!-- <p>
-                    <label for="temperaturaEmp" class="espacio">Temperatura de coccion</label>
-                    <input type="number" name="temperaturaEmp" id="temperaturaEmp" [(ngModel)]="pastelero.pasaporte">
+            <form (ngSubmit)="createDecora()"> 
+                <p>
+                    <label for="fechaHoraInicio" class="espacio">Fecha y Hora de inicio</label>
+                    <input type="datetime" name="fechaHoraInicio" id="fechaHoraInicio" [(ngModel)]="decoracionEmp.fechaHoraInicio">
                 </p>
                 <p>
-                    <label for="fechaHoraInicioEmp" class="espacio">Fecha y Hora de inicio</label>
-                    <input type="datetime" name="fechaHoraInicioEmp" id="fechaHoraInicioEmp" [(ngModel)]="pastelero.paisOgn">
+                    <label for="fechaHoraFin" class="espacio">Fecha y Hora de Final</label>
+                    <input type="datetime" name="fechaHoraFin" id="fechaHoraFin" [(ngModel)]="decoracionEmp.fechaHoraFin">
                 </p>
                 <p>
-                    <label for="fechaHoraFinalEmp" class="espacio">Fecha y Hora de Final</label>
-                    <input type="datetime" name="fechaHoraFinalEmp" id="fechaHoraFinalEmp" [(ngModel)]="pastelero.experiencia">
+                    <label for="peso" class="espacio">Peso del pastel</label>
+                    <input type="number" name="peso" id="peso" [(ngModel)]="decoracionEmp.pesoFinal">
                 </p>
                 <p>
-                    <label for="marcaEmp" class="espacio">Marca Horno</label>
-                    <input type="text" name="marcaEmp" id="marcaEmp" [(ngModel)]="pastelero.nombre">
+                    <label for="decorador" class="espacio">Decorador encargado</label>
+                    <input type="text" name="decorador" id="decorador" [(ngModel)]="decoracionEmp.decorador">
                 </p>
-                <p>
-                    <label for="valorEmp" class="espacio">Valor estimado del pastel $</label>
-                    <input type="number" name="valorEmp" id="valorEmp" [(ngModel)]="pastelero.salario">
-                </p> -->
                 <p class="block">
                     <button>
                         Incertar
-                    </button>
-                </p>
-                <p class="block">
-                    <button>
-                        Actualizar
                     </button>
                 </p>
             </form>
