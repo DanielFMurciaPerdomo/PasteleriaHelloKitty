@@ -6,9 +6,10 @@ export class Pastel{
     fechaSolicitud:string;
     fechaEntrega:string;
     descripcion:string;
+    empleado:string;
     constructor(codigoP:number, nombre:string, tipo:string, 
                 peso:number, fechaSolicitud:string, fechaEntrega:string, 
-                descripcion:string){
+                descripcion:string, empleado:string){
                     this.codigoP=codigoP;
                     this.nombre=nombre;
                     this.tipo=tipo;
@@ -16,6 +17,7 @@ export class Pastel{
                     this.fechaSolicitud=fechaSolicitud;
                     this.fechaEntrega=fechaEntrega;
                     this.descripcion=descripcion;
+                    this.empleado=empleado;
                 }
 
 }

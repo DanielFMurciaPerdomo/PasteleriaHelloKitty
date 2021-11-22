@@ -1,1 +1,87 @@
-<p>ver-coccion works!</p>
+<div class="contenido">
+
+    <h1 class="logo">Pedidos <span>Personas</span></h1>
+    
+    <div class="contenedor-pedidos">
+        <div class="contenedorTabla">
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Codigo Horno</strong></th>
+                        <th><strong>Marca</strong></th>
+                        <th><strong>Valor Estimado</strong></th>
+                        <th><strong>Temperatura de coccion</strong></th>
+                        <th><strong>Fecha y hora de inicio</strong></th>
+                        <th><strong>Fecha y hora final</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let coccion of cocciones"> 
+                        <td>{{coccion.codigoHorEmp}}</td>
+                        <td>{{coccion.marca}}</td>
+                        <td>{{coccion.valorEstimado}}</td>
+                        <td>{{coccion.tempCoccion}}kg</td>
+                        <td>{{coccion.fechaHoraInicio}}</td>
+                        <td>{{coccion.fechaHoraFinal}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Solicitante</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr > <!--*ngFor="let persona of personas"-->
+                        <!-- <td>el solicitante de cedula {{persona.cedula}} se llama {{persona.nombreCompleto}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h1 class="logo">Pedidos <span>Empresas</span></h1>
+    
+    <div class="contenedor-pedidos">
+        <div class="contenedorTabla">
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Codigo Horno</strong></th>
+                        <th><strong>Marca</strong></th>
+                        <th><strong>Valor Estimado</strong></th>
+                        <th><strong>Temperatura de coccion</strong></th>
+                        <th><strong>Fecha y hora de inicio</strong></th>
+                        <th><strong>Fecha y hora final</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let coccionemp of coccionesEmp"> 
+                        <td>{{coccionemp.codigoHorEmp}}</td>
+                        <td>{{coccionemp.marca}}</td>
+                        <td>{{coccionemp.valorEstimado}}</td>
+                        <td>{{coccionemp.tempCoccion}}kg</td>
+                        <td>{{coccionemp.fechaHoraInicio}}</td>
+                        <td>{{coccionemp.fechaHoraFinal}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Solicitante</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr > <!--*ngFor="let empresa of empresas"-->
+                        <!-- <td>el solicitante de cedula {{empresa.nit}} se llama {{empresa.nombre}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -15,7 +15,7 @@ export class FormularioPersonaComponent implements OnInit {
   pastel:Pastel;
   constructor(private personaService:PersonaService, private pastelService:PastelService) {
     this.persona = new Persona(0,'','','');
-    this.pastel = new Pastel(0,'','',0,'','','');
+    this.pastel = new Pastel(0,'','',0,'','','','');
    }
 
   ngOnInit(): void {

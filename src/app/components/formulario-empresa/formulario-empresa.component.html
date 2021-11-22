@@ -48,10 +48,14 @@
                     <label for="fechaEntrega" class="espacio">Fecha de la Entrega</label>
                     <input type="date" name="fechaEntrega" id="fechaEntrega" [(ngModel)]="pastelemp.fechaEntrega">
                 </p>
+                <p>
+                    <label for="empleado" class="espacio">Empleado que recibio la orden</label>
+                    <input type="text" name="empleado" id="empleado" [(ngModel)]="pastelemp.empleado">
+                </p>
                 <p class="block">
                     <label for="descripcion">Descripcion</label> 
                      <textarea name="descripccion" rows="3" [(ngModel)]="pastelemp.descripcion"></textarea>
-                 </p>
+                </p>
                 <p class="block">
                     <button>
                         Realizar Pedido

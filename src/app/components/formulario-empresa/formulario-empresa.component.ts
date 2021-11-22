@@ -16,7 +16,7 @@ export class FormularioEmpresaComponent implements OnInit {
   pastelemp:PastelEmp;
   constructor(private empresaService:EmpresaService, private pastelempService:PastelempService) {
     this.empresa = new Empresa(0,'','');
-    this.pastelemp = new PastelEmp(0,'','',0,'','','');
+    this.pastelemp = new PastelEmp(0,'','',0,'','','','');
    }
 
   ngOnInit(): void {

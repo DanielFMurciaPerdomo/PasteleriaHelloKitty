@@ -1,1 +1,80 @@
-<p>formulario-coccion works!</p>
+<div class="content">
+
+    <h1 class="logo">Incerte los Datos <span>de Coccion</span></h1>
+
+    <div class="pedido-wrapper animated bounceInUp">
+        <div class="pedido-form">
+            <h3>Incerte los datos de coccion para el pedido de personas </h3>
+            <form (ngSubmit)="createCoc()" > 
+                <p>
+                    <label for="temperatura" class="espacio">Temperatura de coccion</label>
+                    <input type="number" name="temperatura" id="temperatura" [(ngModel)]="coccion.tempCoccion">
+                </p>
+                <p>
+                    <label for="fechaHoraInicio" class="espacio">Fecha y Hora de inicio</label>
+                    <input type="datetime" name="fechaHoraInicio" id="fechaHoraInicio" [(ngModel)]="coccion.fechaHoraInicio">
+                </p>
+                <p>
+                    <label for="fechaHoraFinal" class="espacio">Fecha y Hora de Final</label>
+                    <input type="datetime" name="fechaHoraFinal" id="fechaHoraFinal" [(ngModel)]="coccion.fechaHoraFinal">
+                </p>
+                <p>
+                    <label for="marca" class="espacio">Marca Horno</label>
+                    <input type="text" name="marca" id="marca" [(ngModel)]="coccion.marca">
+                </p>
+                <p>
+                    <label for="valor" class="espacio">Valor estimado del pastel $</label>
+                    <input type="number" name="valor" id="valor" [(ngModel)]="coccion.valorEstimado">
+                </p>
+                <p class="block">
+                    <button>
+                        Incertar
+                    </button>
+                </p>
+                <p class="block">
+                    <button>
+                        Actualizar
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="pedido-form">
+            <h3>Incerte los datos de coccion para el pedido de empresas</h3>
+            <form (ngSubmit)="createCocEmp()"> 
+                <p>
+                    <label for="temperatura" class="espacio">Temperatura de coccion</label>
+                    <input type="number" name="temperatura" id="temperatura" [(ngModel)]="coccionEmp.tempCoccion">
+                </p>
+                <p>
+                    <label for="fechaHoraInicio" class="espacio">Fecha y Hora de inicio</label>
+                    <input type="datetime" name="fechaHoraInicio" id="fechaHoraInicio" [(ngModel)]="coccionEmp.fechaHoraInicio">
+                </p>
+                <p>
+                    <label for="fechaHoraFinal" class="espacio">Fecha y Hora de Final</label>
+                    <input type="datetime" name="fechaHoraFinal" id="fechaHoraFinal" [(ngModel)]="coccionEmp.fechaHoraFinal">
+                </p>
+                <p>
+                    <label for="marca" class="espacio">Marca Horno</label>
+                    <input type="text" name="marca" id="marca" [(ngModel)]="coccionEmp.marca">
+                </p>
+                <p>
+                    <label for="valor" class="espacio">Valor estimado del pastel $</label>
+                    <input type="number" name="valor" id="valor" [(ngModel)]="coccionEmp.valorEstimado">
+                </p>
+                <p class="block">
+                    <button>
+                        Incertar
+                    </button>
+                </p>
+                <p class="block">
+                    <button>
+                        Actualizar
+                    </button>
+                </p>
+            </form>
+        </div>
+        
+        
+    </div>
+
+</div>

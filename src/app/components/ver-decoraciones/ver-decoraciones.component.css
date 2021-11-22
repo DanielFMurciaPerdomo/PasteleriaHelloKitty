@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+.contenedor-pedidos {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-family: 'Dosis','sans-serif';
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Dosis','sans-serif';
+    color: #391b4b;
+    margin-bottom: 0;
+}
+
+.logo span {
+    color: #ff7ec1;
+}
+
+/* .contenedor-empleados{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #ffc2e1;
+    font-family: 'Dosis', 'sans-serif';
+} */
+.contenedor-pedidos .contenedorTabla{
+    margin: 0;
+    justify-content: center;
+}
+.contenedor-pedidos .tablaPedidos{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.contenedor-pedidos .tablaPedidos td,th{
+    border: solid 1px #391b4b;
+    text-align: center;
+}
+.contenedor-pedidos .tablaPedidos th{
+    background-color: #ff7ec1;
+    padding: 1rem;
+}
+.contenedor-pedidos .tablaPedidos td .borrar{
+    background-color: #ff7e9f;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Dosis','sans-serif';
+    padding: .5em;
+    margin: .2em;
+}
+.contenedor-pedidos .tablaPedidos td .espacio{
+    margin: 2em;
+}

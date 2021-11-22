@@ -26,6 +26,10 @@ const router:Routes=[
   {path:'insertarEmpleados',component:IncertarEmpleadosComponent},
   {path:'verEmpleados',component:VerEmpleadosComponent},
   {path:'serviciosAd',component:ServiciosAdicionalesComponent},
+  {path:'coccion',component:FormularioCoccionComponent},
+  {path:'verCocciones',component:VerCoccionComponent},
+  {path:'decoracion',component:FormularioDecoracionesComponent},
+  {path:'verDecoraciones',component:VerDecoracionesComponent},
   
 ]
 @NgModule({

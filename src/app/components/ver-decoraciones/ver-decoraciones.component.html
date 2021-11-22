@@ -1,1 +1,95 @@
-<p>ver-decoraciones works!</p>
+<div class="contenido">
+
+    <h1 class="logo">Pedidos <span>Personas</span></h1>
+    
+    <div class="contenedor-pedidos">
+        <div class="contenedorTabla">
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Codigo</strong></th>
+                        <th><strong>Nombre</strong></th>
+                        <th><strong>Tipo</strong></th>
+                        <th><strong>Peso</strong></th>
+                        <th><strong>fechaSolicitud</strong></th>
+                        <th><strong>fechaEntrega</strong></th>
+                        <th><strong>Descripción</strong></th>
+                        <th><strong>Empleado</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr > <!--*ngFor="let pastel of pasteles"-->
+                        <!-- <td>{{pastel.codigoP}}</td>
+                        <td>{{pastel.nombre}}</td>
+                        <td>{{pastel.tipo}}</td>
+                        <td>{{pastel.peso}}kg</td>
+                        <td>{{pastel.fechaSolicitud}}</td>
+                        <td>{{pastel.fechaEntrega}}</td>
+                        <td>{{pastel.descripcion}}</td>
+                        <td>{{pastel.empleado}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Solicitante</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr > <!--*ngFor="let persona of personas"-->
+                        <!-- <td>el solicitante de cedula {{persona.cedula}} se llama {{persona.nombreCompleto}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h1 class="logo">Pedidos <span>Empresas</span></h1>
+    
+    <div class="contenedor-pedidos">
+        <div class="contenedorTabla">
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Codigo</strong></th>
+                        <th><strong>Nombre</strong></th>
+                        <th><strong>Tipo</strong></th>
+                        <th><strong>Peso</strong></th>
+                        <th><strong>fechaSolicitud</strong></th>
+                        <th><strong>fechaEntrega</strong></th>
+                        <th><strong>Descripción</strong></th>
+                        <th><strong>Empleado</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr > <!--*ngFor="let pastelemp of pastelesemp"-->
+                        <!-- <td>{{pastelemp.codigoPa}}</td>
+                        <td>{{pastelemp.nombre}}</td>
+                        <td>{{pastelemp.tipo}}</td>
+                        <td>{{pastelemp.peso}}kg</td>
+                        <td>{{pastelemp.fechaSolicitud}}</td>
+                        <td>{{pastelemp.fechaEntrega}}</td>
+                        <td>{{pastelemp.descripcion}}</td>
+                        <td>{{pastelemp.empleado}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th><strong>Solicitante</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr > <!--*ngFor="let empresa of empresas"-->
+                        <!-- <td>el solicitante de cedula {{empresa.nit}} se llama {{empresa.nombre}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
